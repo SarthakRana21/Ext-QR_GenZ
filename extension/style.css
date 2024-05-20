@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+.wrapper{
+    width: 385px;
+    height: 555px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.wrapper-top{
+    width: 100%;
+    height: 80px;
+    background: #A53AF9;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+h2{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.1rem
+}
+.wrapper-body{
+    width: 100%;
+    padding: 20px;
+}
+.qr-section{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qr-displayer{
+    width: 100%;
+    height: 200px;
+    padding: 5px;
+    border: 1px dashed #A53AF9;
+    border-radius: 5px;
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qr-image{
+    width: 150px;
+    height: 150px;
+}
+.body-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    padding: 7px 15px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+.save-image{
+    background-color: #A53AF9;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #A53AF9;
+    transition: all 0.3s ease;
+}
+.download-img{
+    text-decoration: none;
+}
+
+.copy-btn{
+    background-color: #22C55E;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #22C55E;
+    transition: all 0.3s ease;
+}
+
+hr{
+    height: 2px;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-color: #ececec;
+    margin-top: 15px;
+}
+.body-bottom{
+    width: 100%;
+    padding: 0 20px;
+}
+.form{
+    margin-top: 15px;
+    position: relative;
+}
+.input{
+    width: 100%;
+    height: 36px;
+    border: none;
+    outline: none;
+    padding: 10px 110px 10px 15px;
+    background-color: #ececec;
+    border-radius: 5px;
+    cursor: text;
+}
+
+.submitBtn{
+    position: absolute;
+    opacity: 0.7;
+    right: 0;
+    height: 36px;
+    padding-right: 10px;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    color: #A53AF9;
+}
+.submitBtn span{
+    display: flex;
+    align-items: center;
+}
+form input:valid ~ button{
+    opacity: 1;
+    pointer-events: auto;
+}
+.alert{
+    visibility: hidden;
+    color: rgb(248, 29, 29);
+}
